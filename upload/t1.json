@@ -1,4 +1,3 @@
-[
-    { "name":"Alpha", "age":31, "city":"low1"},
-    { "name":"Bravo", "age":22, "city":"low2"}
+[ 
+    { "name":"Batman", "age":42, "city":"Gotham"}
 ]

@@ -22,6 +22,14 @@ Feel free to use this code however you wish.  Perhaps you have some CSV file you
 
 ## Things to note!
 
-* If you use the uuid package here then a new record will get generated everytime you upload to firestore even if one already exists with exactly the same data.  You might want this but in cases where you would rather a duplicate not be created and an update of the existing record should occurr determine a key common to your data set.  Perhaps something like `obj.id` or `obj.name` but this will depend on the data you are importing. 
+* If you use the uuid package here then a new record will get generated everytime you upload to firestore even if one already exists with exactly the same data.  You might want this but in cases where you would rather a duplicate not be created and an update of the existing record should occurr determine a key common to your data set.  Perhaps something like `obj.id` or `obj.name` but this will depend on the data you are importing.
+
+* This uploader assumes that you are uploading an array of objects in each file.  If you attempt to upload a single JSON object in a file you will get an error.  If you must only upload a single object then do so inside an array.  
+
+```json
+[ 
+    { "name":"Batman", "age":42, "city":"Gotham"}
+]
+```
 
 Happy Coding!
