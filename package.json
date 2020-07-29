@@ -1,0 +1,25 @@
+{
+  "name": "firestoreuploader",
+  "version": "1.0.0",
+  "description": "This firestore uploader allows you upload in bulk JSON to firestore.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node -r dotenv/config app.js"
+  },
+  "keywords": [
+    "firestore",
+    "uploader",
+    "node",
+    "utilities"
+  ],
+  "author": "Matthew McGuff",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "firebase": "^7.17.1",
+    "firebase-admin": "^9.0.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "uuid": "^8.3.0"
+  }
+}
