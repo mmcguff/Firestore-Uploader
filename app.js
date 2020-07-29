@@ -22,7 +22,7 @@ fs.readdir(uploadPath, (err, files) => {
         let item = require('./upload/' + file);
         let key;
         item.forEach(function(obj) {
-            key = uuidv4();  //Change this to key common to your date set like obj.id or obj.name if you don't want dups.
+            key = obj.Name //uuidv4();  //Change this to key common to your date set like obj.id or obj.name if you don't want dups.
             firestore
                 .collection(file.substring(0, lastDotIndex))
                 .doc(key)

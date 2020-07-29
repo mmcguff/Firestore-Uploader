@@ -15,7 +15,9 @@
   "author": "Matthew McGuff",
   "license": "ISC",
   "dependencies": {
+    "csv-parser": "^2.3.3",
     "dotenv": "^8.2.0",
+    "fast-csv": "^4.3.1",
     "firebase": "^7.17.1",
     "firebase-admin": "^9.0.0",
     "fs": "0.0.1-security",
